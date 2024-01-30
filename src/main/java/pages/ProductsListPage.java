@@ -1,6 +1,6 @@
 package pages;
 
-public class ProductsListPage {
+public class ProductsListPage extends AbstractPage{
 
     
 }

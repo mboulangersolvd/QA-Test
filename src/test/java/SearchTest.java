@@ -1,18 +1,21 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
 
-public class FirstTest {
+public class SearchTest extends BaseTest {
 
+    
+    //TestCase 9
     @Test
     public void testSearch() {
-        WebDriver driver = new ChromeDriver();
-        driver.manage().window().maximize();
-        driver.get("https://www.automationexercise.com");
-        HomePage home = new HomePage();
+        HomePage home = openHomePage();
+        Assert.assertTrue(home.isPageOpened(), "HomePage is not opened.");
         home.getHeaderComponent().clickProductsLink();
+        
+        //TO DO
         
     }
 }
