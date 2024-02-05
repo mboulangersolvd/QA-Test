@@ -8,6 +8,6 @@ public class BaseTest {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.automationexercise.com");
-        return new HomePage();
+        return new HomePage(driver);
     }
 }
